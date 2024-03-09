@@ -2,6 +2,7 @@ import logo from './logo.svg';
 import './App.css';
 import React, { Fragment } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Settings from './pages/Settings.js';
 import Home from './pages/Home.js'
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <Routes className="flex">
 
       <Route path="/" element={<Home />} />
+      <Route path="/settings" element={<Settings />} />
       </Routes>
       </Fragment>
     </Router>
