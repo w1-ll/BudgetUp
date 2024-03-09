@@ -2,10 +2,12 @@ import React from 'react';
 
 function Home(){
     return (
-
         <>
         <div>
-            <h1>Home</h1>
+          <div name="navbar" className="text-2xl text-blue-600 font-bold">
+              <h1>Home</h1>
+          </div>
+            
         </div>
         </>
     );
