@@ -3,6 +3,7 @@ import './App.css';
 import React, { Fragment } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './pages/Home.js'
+import Sidebar from './components/sideBar.js'
 function App() {
   return (
     <>
@@ -11,6 +12,7 @@ function App() {
       <Routes className="flex">
 
       <Route path="/" element={<Home />} />
+      <Route path="/sidebar" element={<Sidebar />} />
       </Routes>
       </Fragment>
     </Router>
