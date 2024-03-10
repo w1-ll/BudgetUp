@@ -13,6 +13,7 @@ function App() {
       <Routes className="flex">
       <Route path="/" element={<Home />} />
       <Route path="/settings" element={<Settings />} />
+      <Route path="/sidebar" element={<Sidebar />} />
       </Routes>
       </Fragment>
     </Router>
