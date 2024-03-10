@@ -1,4 +1,4 @@
-import NavBar from '../components/navBar.js';
+import NavBar from '../components/navbar';
 import React,{useState} from "react";
 
 function Home() {
