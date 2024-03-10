@@ -1,9 +1,11 @@
 import { Bar } from "react-chartjs-2";
+import Chart from "chart.js/auto";
+import { CategoryScale } from "chart.js/auto";
 
 const BarChart = ({ chartData }) => {
   return (
     <div className="chart-container">
-      <h2 style={{ textAlign: "center" }}>Bar Chart</h2>
+      <h2 style={{ textAlign: "center" }}>Compare Budgets</h2>
       <Bar
         data={{
           labels: [

@@ -1,5 +1,9 @@
 import React,{useState} from "react";
 import NavBar from "../components/navbar.js"
+import BarChart from "../components/BarChart";
+import Chart from "chart.js/auto";
+import { CategoryScale } from "chart.js/auto";
+
 
 function Finance_Dashboard() {
   const [formData, setFormData] = useState({
@@ -10,6 +14,12 @@ function Finance_Dashboard() {
     restaurants: '',
     entertainment: '',
     optional: '',
+  });
+
+  const [chartData, setChartData] = useState({
+    labels: ["2016", "2017", "2018", "2019", "2020"],
+    dataset1: [250, 1000, 900, 150, 500], // Sample data for dataset 1
+    dataset2: [300, 1200, 900, 400, 400] // Sample data for dataset 2
   });
 
   const [isSubmitted, setIsSubmitted] = useState(false);
@@ -142,7 +152,8 @@ function Finance_Dashboard() {
             </div>
           </div>
           <div className="flex flex-col ml-5 w-[61%] max-md:ml-0 max-md:w-full">
-            <div className="shrink-0 mx-auto max-w-full rounded-3xl bg-lightBlue bg-opacity-20 h-[594px] w-[726px] max-md:mt-10" />
+
+            <div className="shrink-0 mx-auto max-w-full rounded-3xl bg-lightBlue bg-opacity-20 h-auto w-[726px] max-md:mt-10" ><BarChart chartData={chartData} /> </div>
           </div>
         </div>
       </div>
@@ -171,7 +182,6 @@ function Finance_Dashboard() {
             </div>
           </div>
           <div className="flex flex-col ml-5 w-3/5 max-md:ml-0 max-md:w-full">
-            <div className="shrink-0 mx-auto max-w-full rounded-3xl bg-lightBlue bg-opacity-20 h-[666px] w-[726px] max-md:mt-10" />
           </div>
         </div>
       </div>
