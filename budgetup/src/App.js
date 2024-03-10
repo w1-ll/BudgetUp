@@ -4,6 +4,7 @@ import React, { Fragment } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './pages/Home.js'
 import Sidebar from './components/sideBar.js'
+import Dashboard from './pages/Finance_Dashboard.js'
 function App() {
   return (
     <>
@@ -13,6 +14,8 @@ function App() {
 
       <Route path="/" element={<Home />} />
       <Route path="/sidebar" element={<Sidebar />} />
+      <Route path="/dashboard" element={<Dashboard />} />
+
       </Routes>
       </Fragment>
     </Router>
