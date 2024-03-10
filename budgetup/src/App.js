@@ -5,6 +5,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Settings from './pages/Settings.js';
 import Home from './pages/Home.js'
 import Sidebar from './components/sideBar.js'
+import FinanceTips from './pages/Finance_Tips.js';
 function App() {
   return (
     <>
@@ -14,6 +15,7 @@ function App() {
       <Route path="/" element={<Home />} />
       <Route path="/settings" element={<Settings />} />
       <Route path="/sidebar" element={<Sidebar />} />
+      <Route path="/finance_tips" element={<FinanceTips />}/>
       </Routes>
       </Fragment>
     </Router>
